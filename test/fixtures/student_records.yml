@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  present: false
+  preparation: 1
+  personalAttitude: 1
+  note: MyString
+  student_student_id: 1
+  classDate: 2012-06-11 18:16:01
+
+two:
+  present: false
+  preparation: 1
+  personalAttitude: 1
+  note: MyString
+  student_student_id: 1
+  classDate: 2012-06-11 18:16:01

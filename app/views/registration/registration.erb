@@ -1,0 +1,41 @@
+Register activities for group <%= @group.name %> <br/>
+Day XXX<br/>
+
+
+<%= form_for @group_record, :url => { :action => "save_registration" } do |f| %>
+    <% if @group_record.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@group_record.errors.count, "error") %> prohibited this group_record from being saved:</h2>
+
+          <ul>
+            <% @group_record.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Attitude</th>
+    <th>Preparation</th>
+    <th>Note</th>
+  </tr>
+
+
+<% @group.students.each do |student| %>
+ <tr>
+   <td><%= student.name %></td>
+   <td><%= text_field_tag( "personal_attitude["+student.id.to_s+"]", "personal_attitude") %></td>
+   <td><%= text_field_tag( student.id, "something_else") %></td>
+   tr>
+  <% end %>
+
+
+</table>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

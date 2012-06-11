@@ -1,9 +1,16 @@
 MexPilotInstructor::Application.routes.draw do
+  resources :group_records
+
   resources :groups
 
   resources :students
 
   resources :student_records
+
+  match 'start' => "registration#start"
+  match 'registration' => "registration#registration"
+  post 'registration/save_registration' => "registration#save_registration"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

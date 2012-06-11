@@ -1,0 +1,17 @@
+<%= form_for(@group_record) do |f| %>
+  <% if @group_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group_record.errors.count, "error") %> prohibited this group_record from being saved:</h2>
+
+      <ul>
+      <% @group_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

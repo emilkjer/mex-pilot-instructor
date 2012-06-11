@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Present:</b>
+  <%= @student_record.present %>
+</p>
+
+<p>
+  <b>Preparation:</b>
+  <%= @student_record.preparation %>
+</p>
+
+<p>
+  <b>Personalattitude:</b>
+  <%= @student_record.personalAttitude %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @student_record.note %>
+</p>
+
+<p>
+  <b>Student student:</b>
+  <%= @student_record.student_student_id %>
+</p>
+
+<p>
+  <b>Classdate:</b>
+  <%= @student_record.classDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_record_path(@student_record) %> |
+<%= link_to 'Back', student_records_path %>

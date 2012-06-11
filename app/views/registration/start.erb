@@ -1,0 +1,20 @@
+<h1>Please select a group</h1>
+
+
+<% form_for "the_group", :url => {:action => 'registration'} do |f| %>
+    <%= f.select :group, @groups %>
+    <%= submit_tag "Submit", :disable_with => "Submitting..." %>
+<% end %>
+
+
+<%= form_tag("/registration", :method => "get") do |g| %>
+    <div class="field">
+      <%= label_tag(:q, "Please select a group:") %>
+      <%= collection_select(:group, :group_id, @groups, :id, :name,{}) %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag("Start Registration") %>
+    </div>
+
+<% end %>

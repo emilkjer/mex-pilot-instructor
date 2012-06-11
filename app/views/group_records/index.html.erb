@@ -1,0 +1,21 @@
+<h1>Listing group_records</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @group_records.each do |group_record| %>
+  <tr>
+    <td><%= link_to 'Show', group_record %></td>
+    <td><%= link_to 'Edit', edit_group_record_path(group_record) %></td>
+    <td><%= link_to 'Destroy', group_record, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Group record', new_group_record_path %>
