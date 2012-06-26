@@ -82,4 +82,12 @@ class GroupsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def choose_group
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end
