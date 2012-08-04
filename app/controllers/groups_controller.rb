@@ -93,7 +93,7 @@ class GroupsController < ApplicationController
 
   def group_stats
     @students = GroupRecord.get_group_students(params[:group][:group_id])
-
+    @group = Group.find(params[:group][:group_id].to_i)
     respond_to do |format|
       format.html
     end
