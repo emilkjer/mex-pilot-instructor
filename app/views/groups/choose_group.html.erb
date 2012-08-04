@@ -1,3 +1,6 @@
+<%= link_to('start', :controller => :registration, :action => :start) %> |
+<%= link_to('stats', :controller => :groups, :action => :choose_group) %>
+<br/><hr><br/>
 
 <%= form_tag("/group_stats", :method => "get") do |g| %>
     <div class="field">

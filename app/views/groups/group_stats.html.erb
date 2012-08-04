@@ -1,3 +1,7 @@
+<%= link_to('start', :controller => :registration, :action => :start) %> |
+<%= link_to('stats', :controller => :groups, :action => :choose_group) %>
+<br/><hr><br/>
+
 Stats for group: <%= @group.name %> <br/>
 <table>
   <tr>
@@ -16,3 +20,4 @@ Stats for group: <%= @group.name %> <br/>
       </tr>
 <% end %>
 </table>
+

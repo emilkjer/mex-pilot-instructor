@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dc77d35a-7376-464e-920f-d8555a8121ff" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/groups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/choose_group.html.erb" afterPath="$PROJECT_DIR$/app/views/groups/choose_group.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/group_stats.html.erb" afterPath="$PROJECT_DIR$/app/views/groups/group_stats.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/registration/start.erb" afterPath="$PROJECT_DIR$/app/views/registration/start.erb" />
     </list>
     <ignored path="mex-pilot-instructor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,22 +47,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="choose_group.html.erb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="choose_group.html.erb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/groups/choose_group.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="34" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <marker date="1340717693000" expanded="true" signature="80:218" placeholder="..." />
-                    <marker date="1340717693000" expanded="true" signature="245:304" placeholder="..." />
-                  </folding>
+                <state line="3" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.083179295">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="group_stats.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="group_stats.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/groups/group_stats.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="164" vertical-scroll-proportion="-0.0">
                   <folding />
                 </state>
               </provider>
@@ -70,7 +68,7 @@
           <file leaf-file-name="start.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/registration/start.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="9" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+                <state line="3" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-1.875">
                   <folding />
                 </state>
               </provider>
@@ -79,7 +77,7 @@
           <file leaf-file-name="registration.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/registration/registration.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="20" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
+                <state line="45" column="20" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-18.25">
                   <folding />
                 </state>
               </provider>
@@ -125,19 +123,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="groups_controller.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="groups_controller.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="98" column="26" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.7395833">
+                <state line="98" column="26" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="44" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -161,10 +159,8 @@
         <option value="$PROJECT_DIR$/app/views/groups/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/registration/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/registration/start.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/choose_group.erb" />
-        <option value="$PROJECT_DIR$/app/views/groups/choose_group.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/group_record.rb" />
         <option value="$PROJECT_DIR$/app/models/student_record.rb" />
@@ -174,6 +170,8 @@
         <option value="$PROJECT_DIR$/app/views/registration/registration.erb" />
         <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/groups/group_stats.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/registration/start.erb" />
+        <option value="$PROJECT_DIR$/app/views/groups/choose_group.html.erb" />
       </list>
     </option>
   </component>
@@ -278,8 +276,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/registration" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -504,23 +502,6 @@
         <state line="6" column="30" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/choose_group.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/registration/start.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/registration/registration.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="20" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/registration_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="11" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" />
@@ -541,21 +522,44 @@
         <state line="3" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="26" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.7395833">
+        <state line="98" column="26" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/registration/registration.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="20" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-18.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/registration/start.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/group_stats.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/choose_group.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.083179295">
           <folding />
         </state>
       </provider>
