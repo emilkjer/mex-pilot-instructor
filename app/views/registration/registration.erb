@@ -31,9 +31,8 @@ Day XXX<br/>
   <% @group.students.each do |student| %>
  <tr>
    <td><%= student.name %></td>
-   <td><%= select_tag(:week_day ) %></td>
-   <td><%= text_field_tag( "personal_attitude["+student.id.to_s+"]", "personal_attitude") %></td>
-   <td><%= text_field_tag( "preparation["+student.id.to_s+"]", "preparation") %></td>
+   <td><%= select_tag("personal_attitude["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
+   <td><%= select_tag("preparation["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
    <td><%= text_field_tag( "note["+student.id.to_s+"]", "note") %></td>
 
   <% end %>
