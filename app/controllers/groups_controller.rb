@@ -85,9 +85,18 @@ class GroupsController < ApplicationController
 
 
   def choose_group
+    @groups = Group.all
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def group_stats
+    @students = GroupRecord.get_group_students(params[:group][:group_id])
 
     respond_to do |format|
       format.html
     end
+
   end
 end

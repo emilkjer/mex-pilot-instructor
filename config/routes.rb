@@ -11,6 +11,7 @@ MexPilotInstructor::Application.routes.draw do
   match 'registration' => "registration#registration"
   post 'registration/save_registration' => "registration#save_registration"
   match 'stats' => "groups#choose_group"
+  match 'group_stats' => 'groups#group_stats'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

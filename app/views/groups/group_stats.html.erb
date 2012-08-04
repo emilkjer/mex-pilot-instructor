@@ -1,0 +1,18 @@
+hello stats :) <br/>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Preparation</th>
+    <th>Attitude</th>
+    <th>Note</th>
+  </tr>
+
+<% @students.each do |stud| %>
+      <tr>
+        <td><%= stud.name %></td>
+        <td><%= stud.preparation %></td>
+        <td><%= stud.personalAttitude %></td>
+        <td><%= stud.note %></td>
+      </tr>
+<% end %>
+</table>

@@ -30,22 +30,24 @@ def save_registration
     params[:preparation].each do |prep|
       student = Student.find(prep[0])
       pa = params[:personal_attitude][prep[0]]
+      note = params[:note][prep[0]]
       pr = prep[1]
+
       students << StudentRecord.create(
-          :student_student_id => student,
+          :student_student_id => student.id,
           :preparation =>pr,
-          :personalAttitude => pa
+          :personalAttitude => pa,
+          :note => note
       )
     end
   end
-  #debugger
+
 
 
   @group_record = GroupRecord.new({
-                                      :group_id => @group,
+                                      :group_id => params[:group_record][:group],
                                       :student_records => students
                                   })
-
 
 
   respond_to do |format|

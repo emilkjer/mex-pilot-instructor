@@ -24,15 +24,18 @@ Day XXX<br/>
     <th>Note</th>
   </tr>
 
-  <%= hidden_field_tag :group, :value => @group.id %>
+  <%= f.hidden_field :group, :value => @group.id %>
 
 
 
   <% @group.students.each do |student| %>
  <tr>
    <td><%= student.name %></td>
+   <td><%= select_tag(:week_day ) %></td>
    <td><%= text_field_tag( "personal_attitude["+student.id.to_s+"]", "personal_attitude") %></td>
    <td><%= text_field_tag( "preparation["+student.id.to_s+"]", "preparation") %></td>
+   <td><%= text_field_tag( "note["+student.id.to_s+"]", "note") %></td>
+
   <% end %>
 
 

@@ -1,1 +1,12 @@
-hello :)
+
+<%= form_tag("/group_stats", :method => "get") do |g| %>
+    <div class="field">
+      <%= label_tag(:q, "Please select a group:") %>
+      <%= collection_select(:group, :group_id, @groups, :id, :name,{}) %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag("Get group statistics") %>
+    </div>
+
+<% end %>
