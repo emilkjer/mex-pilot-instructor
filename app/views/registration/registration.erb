@@ -1,5 +1,5 @@
 Register activities for group <%= @group.name %> <br/>
-Day XXX<br/>
+Day <%= @date_now %> <br/>
 
 
 <%= form_for @group_record, :url => { :action => "save_registration" } do |f| %>
@@ -25,7 +25,7 @@ Day XXX<br/>
   </tr>
 
   <%= f.hidden_field :group, :value => @group.id %>
-
+  <%= f.hidden_field :date, :value => @date_now %>
 
 
   <% @group.students.each do |student| %>

@@ -10,13 +10,13 @@ def start
 end
 
 def registration
-  #debugger
+
   if params[:group]
     @group = Group.find(params[:group][:group_id])
   end
   @group_record = GroupRecord.new
-
-
+  #@date_now = Date.today
+  @date_now = Time.now.in_time_zone('Copenhagen').to_date
   respond_to do |format|
     format.html
   end
@@ -25,7 +25,7 @@ end
 def save_registration
   #TODO refactor to model
   students = []
-
+  debugger
   if params[:preparation]
     params[:preparation].each do |prep|
       student = Student.find(prep[0])
