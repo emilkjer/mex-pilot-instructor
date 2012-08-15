@@ -1,4 +1,5 @@
-Register activities for group <%= @group.name %> <br/>
+<h2>Register activities for group: <%= @group.name %></h2>
+
 Day <%= @date_now %> <br/>
 
 
@@ -21,6 +22,7 @@ Day <%= @date_now %> <br/>
     <th>Name</th>
     <th>Attitude</th>
     <th>Preparation</th>
+    <th>Present</th>
     <th>Note</th>
   </tr>
 
@@ -33,6 +35,7 @@ Day <%= @date_now %> <br/>
    <td><%= student.name %></td>
    <td><%= select_tag("personal_attitude["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
    <td><%= select_tag("preparation["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
+   <td><%= check_box_tag('present["+student.id.to_s+"]',  'yes', true) %></td>
    <td><%= text_field_tag( "note["+student.id.to_s+"]", "note") %></td>
 
   <% end %>
@@ -40,6 +43,7 @@ Day <%= @date_now %> <br/>
 
 </table>
     <div class="actions">
-      <%= f.submit %>
+      <%= submit_tag("Save Registration") %>
+
     </div>
 <% end %>

@@ -1,13 +1,13 @@
 <%= link_to('start', :controller => :registration, :action => :start) %> |
 <%= link_to('stats', :controller => :groups, :action => :choose_group) %>
-<br/><hr><br/>
+<br/><hr>
 
-Stats for group: <%= @group.name %> <br/>
+<h2>Statistics for group: <%= @group.name %> </h2>
 <table>
   <tr>
     <th>Name</th>
-    <th>Preparation</th>
-    <th>Attitude</th>
+    <th>AVG Preparation</th>
+    <th>AVG Attitude</th>
     <th>Note</th>
   </tr>
 
@@ -16,8 +16,11 @@ Stats for group: <%= @group.name %> <br/>
         <td><%= stud.name %></td>
         <td><%= stud.preparation %></td>
         <td><%= stud.personalAttitude %></td>
-        <td><%= stud.note %></td>
+        <td>PRINT</td>
       </tr>
 <% end %>
 </table>
-
+<%= check_box_tag 'INCLUDE NOTES' %>INCLUDE NOTES
+  <div class="actions">
+    <%= submit_tag("Print Data") %>
+  </div>
