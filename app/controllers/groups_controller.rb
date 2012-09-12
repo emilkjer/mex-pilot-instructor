@@ -92,10 +92,15 @@ class GroupsController < ApplicationController
   end
 
   def group_stats
-    StudentRecord.average(:preparation, :group => 'student_student_id')
-    StudentRecord.average(:personalAttitude, :group => 'student_student_id')
-    @students = GroupRecord.get_group_students(params[:group][:group_id])
+    #StudentRecord.average(:preparation, :group => 'student_student_id')
+    #StudentRecord.average(:personalAttitude, :group => 'student_student_id')
+    #@students = GroupRecord.get_group_students(params[:group][:group_id])
+    #@group = Group.find(params[:group][:group_id].to_i)
+
     @group = Group.find(params[:group][:group_id].to_i)
+    @students = GroupRecord.get_group_students(params[:group][:group_id])
+    @stats = GroupRecord.get_group_student_stats(params[:group][:group_id])
+
     respond_to do |format|
       format.html
     end

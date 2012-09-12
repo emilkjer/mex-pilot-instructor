@@ -3,23 +3,30 @@
 <br/><hr>
 
 <h2>Statistics for group: <%= @group.name %> </h2>
+
 <table>
   <tr>
     <th>Name</th>
+    <th>ID </th>
     <th>AVG Preparation</th>
     <th>AVG Attitude</th>
     <th>Note</th>
   </tr>
 
-<% @students.each do |stud| %>
+  <% @stats.each do |stud| %>
+
       <tr>
-        <td><%= stud.name %></td>
-        <td><%= stud.preparation %></td>
-        <td><%= stud.personalAttitude %></td>
+        <td><%= stud[0] %></td>
+        <td><%= stud[1][:name] %></td>
+        <td><%= stud[1][:preparation] %></td>
+        <td><%= stud[1][:personal_attitude] %></td>
+
         <td>PRINT</td>
       </tr>
-<% end %>
+  <% end %>
 </table>
+
+
 <%= check_box_tag 'INCLUDE NOTES' %>INCLUDE NOTES
   <div class="actions">
     <%= submit_tag("Print Data") %>

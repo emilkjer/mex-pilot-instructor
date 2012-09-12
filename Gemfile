@@ -14,6 +14,7 @@ gem "heroku"
 group :development, :test do
   gem 'sqlite3'
   gem 'debugger'
+  gem 'rails-erd'
 end
 group :production do
   gem 'pg'
