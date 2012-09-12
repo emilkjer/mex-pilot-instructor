@@ -6,10 +6,11 @@
 
 <table>
   <tr>
+    <th>ID</th>
     <th>Name</th>
-    <th>ID </th>
     <th>AVG Preparation</th>
     <th>AVG Attitude</th>
+    <th>% Present</th>
     <th>Note</th>
   </tr>
 
@@ -20,7 +21,7 @@
         <td><%= stud[1][:name] %></td>
         <td><%= stud[1][:preparation] %></td>
         <td><%= stud[1][:personal_attitude] %></td>
-
+        <td><%= stud[1][:present] %></td>
         <td>PRINT</td>
       </tr>
   <% end %>

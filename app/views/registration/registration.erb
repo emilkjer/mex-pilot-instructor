@@ -35,7 +35,7 @@ Day <%= @date_now %> <br/>
    <td><%= student.name %></td>
    <td><%= select_tag("personal_attitude["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
    <td><%= select_tag("preparation["+student.id.to_s+"]", options_for_select([['1', 1], ['2', 2], ['3', 3], ['4',4], ['5',5]])) %></td>
-   <td><%= check_box_tag('present["+student.id.to_s+"]',  'yes', true) %></td>
+   <td><%= check_box_tag("present["+student.id.to_s+"]",true, true) %></td>
    <td><%= text_field_tag( "note["+student.id.to_s+"]", "note") %></td>
 
   <% end %>

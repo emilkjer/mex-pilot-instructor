@@ -45,7 +45,12 @@ class GroupRecord < ActiveRecord::Base
       present_array = []
 
       #Create array of preparation
-      student[1].each{|gg|  preparation_array<< gg.preparation && personal_attitude_array << gg.personalAttitude}
+      student[1].each{|gg|
+        preparation_array<< gg.preparation &&
+            personal_attitude_array << gg.personalAttitude &&
+            present_array << gg.present
+      }
+
       student_name = {:name => Student.find(student[0]).name}
 
       #Calculate statistics
@@ -53,11 +58,16 @@ class GroupRecord < ActiveRecord::Base
       personal_attitude_avg = {:personal_attitude => personal_attitude_array.sum / personal_attitude_array.count}
 
 
+
+      present_percentage = {:present => ((present_array.count(true).to_f/present_array.count).to_f*100.0).to_f }
+
+
       # merge hash
       hash_avg = {}
       hash_avg = hash_avg.merge(student_name)
       hash_avg = hash_avg.merge(preparation_avg)
       hash_avg = hash_avg.merge(personal_attitude_avg)
+      hash_avg = hash_avg.merge(present_percentage)
 
       #Store stats for current student
 
