@@ -42,11 +42,11 @@ def save_registration
   end
 
 
-
+  registration_date = Time.now.in_time_zone('Copenhagen').to_date
   @group_record = GroupRecord.new({
                                       :group_id => params[:group_record][:group],
                                       :student_records => students,
-                                      :reg_date => Time.now.in_time_zone('Copenhagen').to_date
+                                      :reg_date => registration_date
                                   })
 
 
