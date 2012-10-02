@@ -104,6 +104,15 @@ class GroupsController < ApplicationController
     respond_to do |format|
       format.html
     end
+  end
 
+  def student_notes
+    StudentRecord.where(:group_id => group_id).last.student_records
+
+
+    #:group_id=>@group.id, :student_id=>stud[0]
+    debugger
+    puts "sdf"
+    return true
   end
 end

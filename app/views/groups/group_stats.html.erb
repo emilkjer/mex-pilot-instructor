@@ -4,8 +4,9 @@
 
 <h2>Statistics for group: <%= @group.name %> </h2>
 
-<table>
-  <tr>
+<table id="table1">
+  <thead>
+  <tr class="head">
     <th>ID</th>
     <th>Name</th>
     <th>AVG Preparation</th>
@@ -13,7 +14,7 @@
     <th>% Present</th>
     <th>Note</th>
   </tr>
-
+  </thead>
   <% @stats.each do |stud| %>
 
       <tr>
@@ -21,8 +22,8 @@
         <td><%= stud[1][:name] %></td>
         <td><%= stud[1][:preparation] %></td>
         <td><%= stud[1][:personal_attitude] %></td>
-        <td><%= stud[1][:present] %></td>
-        <td>PRINT</td>
+        <td><%= (number_with_precision(stud[1][:present], :precision => 2) || 0) %></td>
+        <td><%= link_to "Show Notes", {:controller =>:groups, :action => :student_notes, :group_id=>@group.id, :student_id=>stud[0] }%></td>
       </tr>
   <% end %>
 </table>

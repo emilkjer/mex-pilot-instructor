@@ -11,3 +11,16 @@
  *= require_self
  *= require_tree .
  */
+
+
+#table1 th {
+    border: 0px solid black;
+    padding: 0 10px;
+}
+#table1 td { text-align: center; }
+#table1 tr.head { background-color:#BFBFBF }
+#table1 tr:nth-child(odd) td { background-color:#ebebeb }
+#table1 tr:nth-child(even) td { background-color:#e0e0e0 }
+
+
+
